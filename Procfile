@@ -1,2 +1,2 @@
-web: waitress-serve --port=$PORT capstone-sra:main.py
+web: waitress-serve --port=$PORT --call '__init__:create_app'
 web: node ./index.js
