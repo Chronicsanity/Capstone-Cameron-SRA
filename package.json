@@ -17,6 +17,7 @@
     "url": "https://github.com/Chronicsanity/Capstone-SRA-Cameron/issues"
   },
   "homepage": "https://github.com/Chronicsanity/Capstone-SRA-Cameron#readme",
+  
   "dependencies": {
     "express": "^4.17.2",
     "react-router-dom": "^6.2.1",
