@@ -1,2 +1,2 @@
 web: gunicorn main.py:app
-web: node ./app.js
+web: node ./index.js
