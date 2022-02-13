@@ -2,6 +2,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
+from waitress import serve
 
 
 
@@ -16,7 +17,8 @@ def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://rpojgsgfhigprq:3e74d2ed51b8ad75dadd84b7404ac6761f19396439f75c48c4921cf97e4b2b88@ec2-52-70-107-254.compute-1.amazonaws.com:5432/d1aldo6rvck7l1'
     app.config['SECRET_KEY'] = 'Cameron'
-
+    
+    serve(app, listen='*:5000')
    
    
 
