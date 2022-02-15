@@ -1,11 +1,11 @@
 {
   "name": "capstone-sra",
   "version": "1.0.0",
-  "main": "index",
+  "main": "node /public/server/index.js",
   "type": "module",
   "scripts": {
-    "start": "node /public/server/index",
-    "devStart": "nodemon /public/server/index",
+    "start": "node /public/server/index.js",
+    "devStart": "nodemon /public/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
