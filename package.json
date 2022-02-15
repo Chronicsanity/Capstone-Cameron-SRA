@@ -4,9 +4,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "devStart": "nodemon index.js"
+    "devStart": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,11 @@
     "express": "^4.17.2",
     "react-router-dom": "^6.2.1",
     "socket.io": "^4.4.1",
-    "tar": "^6.1.11"
+    "tar": "^6.1.11",
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.14"
   },
 
   "engines": {
