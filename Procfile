@@ -8,4 +8,4 @@ web: waitress-serve \
     --call "main.py:create_app"
 
 
-    worker: node index.js
+    worker: node ./public/server/index.js
