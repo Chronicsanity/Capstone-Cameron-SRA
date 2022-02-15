@@ -7,5 +7,4 @@ def create_app():
 
     if __name__ == '__main__':
         app = create_app()
-        serve(app, listen='*:5000')
         app.run(debug=False)
