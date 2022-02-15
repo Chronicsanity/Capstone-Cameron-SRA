@@ -1,12 +1,12 @@
 {
-  "name": "capstone-sra-cameron",
+  "name": "capstone-sra",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "devStart": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,10 @@
     "socket.io": "^4.4.1",
     "tar": "^6.1.11"
   },
-  "keywords": [],
+
+  "engines": {"node": ">= 0.8"},
+
+  "keywords": ["heroku"],
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "devDependencies": {}
 }
