@@ -1,7 +1,7 @@
 {
   "name": "capstone-sra",
   "version": "1.0.0",
-  "main": "/public/server/index.js",
+  "main": "/public/server/index",
   "type": "module",
   "scripts": {
     "start": "node /public/server/index",
