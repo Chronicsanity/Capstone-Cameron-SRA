@@ -1,7 +1,6 @@
 import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import cookieParser from 'cookie-parser'
 import session from 'express-session'
 import bcrypt from 'bcrypt'
 
@@ -24,7 +23,6 @@ app.use(
     credentials: true,
   })
 );
-app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(
