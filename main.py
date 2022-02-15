@@ -1,8 +1,15 @@
-from website import create_app
+from flask import Flask
 from waitress import serve
 
-app = create_app()
+def create_app():
+    app = Flask(__name__)
+
+    @app.route('/')
+    def index():
+        return "Hello!"
+    return app
 
 if __name__ == '__main__':
+    app = create_app()
     serve(app, listen='*:5000')
     app.run(debug=False)
