@@ -4,6 +4,7 @@
   "main": "node ./public/server/index.js",
   "type": "module",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node ./public/server/index.js",
     "devStart": "nodemon ./public/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
