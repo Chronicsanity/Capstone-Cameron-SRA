@@ -1,4 +1,4 @@
-web: node 'index.js'
+web: node 'myapp.js'
 
 web: waitress-serve \
     --listen "*:$PORT" \
