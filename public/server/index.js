@@ -1,11 +1,10 @@
-const express = require("express");
+import express from 'express'
+import cors from 'cors'
+import bodyparser from 'body-parser'
+import cookieparser from 'cookie-parser'
+import session from 'express-session'
+import bcrypt from 'bcrypt'
 const mysql = require("mysql");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const cookieParser = require("cookie-parser");
-const session = require("express-session");
-
-const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
 const server = http.createServer(process.env.PORT || 3000);
