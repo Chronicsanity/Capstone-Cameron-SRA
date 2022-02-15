@@ -1,7 +1,6 @@
 const express = require("express");
 const mysql = require("mysql");
 const cors = require("cors");
-
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
@@ -9,6 +8,7 @@ const session = require("express-session");
 const bcrypt = require("bcrypt");
 const saltRounds = 10;
 
+const server = http.createServer(process.env.PORT || 3000);
 
 app.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
