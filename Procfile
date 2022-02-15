@@ -7,4 +7,4 @@ web: waitress-serve \
     --threads ${WEB_CONCURRENCY:-4} \
     --call __init__:create_app
 
-    worker: node server.js
+    worker: node index.js
