@@ -5,6 +5,7 @@ web: waitress-serve \
     --log-untrusted-proxy-headers \
     --clear-untrusted-proxy-headers \
     --threads ${WEB_CONCURRENCY:-4} \
-    --call myapp:app
+    main:create_app
+
 
     worker: node index.js
