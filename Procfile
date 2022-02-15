@@ -1,5 +1,3 @@
-web: node 'server.js'
-
 web: waitress-serve \
     --listen "*:$PORT" \
     --trusted-proxy '*' \
@@ -8,3 +6,5 @@ web: waitress-serve \
     --clear-untrusted-proxy-headers \
     --threads ${WEB_CONCURRENCY:-4} \
     --call __init__:create_app
+
+    worker: node server.js
