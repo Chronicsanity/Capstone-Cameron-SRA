@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/Chronicsanity/Capstone-SRA-Cameron/issues"
   },
-  "homepage": "https://github.com/Chronicsanity/Capstone-SRA-Cameron#readme",
+  "homepage": "https://capstone-sra.herokuapp.com/",
   
   "dependencies": {
     "express": "^4.17.2",
