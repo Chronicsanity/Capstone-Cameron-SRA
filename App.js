@@ -5,6 +5,7 @@ import Register from './components/pages/Register';
 import Dashboard from './components/pages/dashboard';
 import React from 'react';
 
+
 function App() {
 
   return (
@@ -21,3 +22,10 @@ function App() {
 }
 
 export default App;
+
+export default <Router history={hashHistory}>
+  <Route path="/" component={App}>
+    <IndexRoute component={home}/>
+    <Route path="./templates/sign_up.html" component={sign_up}/>
+  </Route>
+</Router>
