@@ -6,7 +6,6 @@ def create_app():
  
 
     if __name__ == '__main__':
-        serve(app, listen='*:5000')
         app = create_app()
         app.run(debug=False)
-    return 'OK'
+    return serve(app, listen='*:5000')
