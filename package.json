@@ -2,9 +2,8 @@
   "name": "capstone-sra",
   "version": "1.0.0",
   "main": "./index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    
     "start": "node  --es-module-specifier-resolution=node ./index.js",
     "devStart": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,22 +18,24 @@
     "url": "https://github.com/Chronicsanity/Capstone-SRA-Cameron/issues"
   },
   "homepage": "https://capstone-sra.herokuapp.com/",
-  
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.14",
     "react-router-dom": "^6.2.1",
     "socket.io": "^4.4.1",
-    "tar": "^6.1.11",
-    "body-parser": "^1.19.0",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.14"
+    "tar": "^6.1.11"
   },
-
   "engines": {
     "node": ">= 0.8",
-    "npm":  "6.14.8"},
-
-  "keywords": ["heroku"],
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "devDependencies": {}
+    "npm": "6.14.8"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)."
 }
