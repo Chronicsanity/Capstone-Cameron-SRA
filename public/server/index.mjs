@@ -5,11 +5,10 @@ import session from 'express-session'
 import bcrypt from 'bcrypt'
 
 const saltRounds = 10;
-const mysql = require("mysql");
 
 const server = http.createServer(process.env.PORT || 3000);
 
-app.listen(process.env.PORT || 3000, function(){
+server.listen(process.env.PORT || 3000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 
@@ -110,4 +109,4 @@ app.post("/login", (req, res) => {
   );
 });
 
-app.listen(process.env.PORT || 5000)
+serve.listen(process.env.PORT || 5000)
