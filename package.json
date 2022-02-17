@@ -1,12 +1,12 @@
 {
   "name": "capstone-sra",
   "version": "1.0.0",
-  "main": "./index.mjs",
+  "main": "./index.js",
   "type": "module",
   "scripts": {
     
-    "start": "node --experimental-modules --es-module-specifier-resolution=node ./index.mjs",
-    "devStart": "nodemon ./index.mjs",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node ./index.js",
+    "devStart": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
