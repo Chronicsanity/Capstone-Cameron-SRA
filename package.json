@@ -4,7 +4,7 @@
   "main": "./index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node  --es-module-specifier-resolution=node ./index.js",
+    "start": "node ./index.js",
     "devStart": "nodemon ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
