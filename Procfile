@@ -1,1 +1,1 @@
-web: waitress-serve --listen "*:$PORT" --threads ${WEB_CONCURRENCY:-4} --call "__init__:create_app"
+web: waitress-serve --port="*:$PORT" --listen "*:$PORT" --threads ${WEB_CONCURRENCY:-4} --call "__init__:create_app"
