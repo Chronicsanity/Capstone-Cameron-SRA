@@ -19,12 +19,8 @@ const server = http.createServer((req, res) =>
   server.listen(8080)
 });
 
-app.get('/', (req, res) => {
-  res
-    .status(200)
-    .send('Hello server is running')
-    .end();
-});
+app.use(express.static(__dirname + '/website'));
+app.listen(process.env.PORT || 8000);
  
 // Start the server
 const PORT = process.env.PORT || 8080;
