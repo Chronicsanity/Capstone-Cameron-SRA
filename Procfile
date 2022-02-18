@@ -1,1 +1,2 @@
 web: waitress-serve --listen "*:$PORT" --threads ${WEB_CONCURRENCY:-4} --call "main:create_app"
+web: node app/server.mjs
