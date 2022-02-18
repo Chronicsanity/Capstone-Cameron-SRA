@@ -1,1 +1,1 @@
-web: waitress-serve --threads ${WEB_CONCURRENCY:-4} --call "server.js:server"
+web: waitress-serve --threads ${WEB_CONCURRENCY:-4} --call "./app/server.js:server"
