@@ -3,9 +3,10 @@ import cors from 'cors'
 import bodyParser from 'body-parser'
 import session from 'express-session'
 import bcrypt from 'bcrypt'
+import path from 'path'
 
 const saltRounds = 10;
-
+const __dirname = path.resolve(); 
 const server = http.createServer(process.env.PORT || 3000);
 
 server.listen(process.env.PORT || 3000, function(){
@@ -108,5 +109,10 @@ app.post("/login", (req, res) => {
     }
   );
 });
-
-serve.listen(process.env.PORT || 5000)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname,  "build", "index.html"));
+  });
+}
+server.listen(process.env.PORT || 5000)
