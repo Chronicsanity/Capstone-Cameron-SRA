@@ -22,11 +22,6 @@ const server = http.createServer((req, res) =>
 });
 
 app.use(express.static(__dirname + '/website'));
-app.listen(process.env.PORT || 8000);
+app.listen(process.env.PORT || 8080);
  
 // Start the server
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-  console.log('Press Ctrl+C to quit.');
-});
