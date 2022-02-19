@@ -4,7 +4,7 @@
   "main": "./index.js",
   "type": "module",
   "scripts": {
-    "client-install" : "npm install --prefix client",
+    "client-install": "npm install --prefix client",
     "start": "node server.mjs",
     "devStart": "nodemon ./server.mjs",
     "client": "npm start --prefix client",
@@ -29,6 +29,7 @@
     "express-session": "^1.17.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.14",
+    "path-browserify": "^1.0.1",
     "react-router-dom": "^6.2.1",
     "socket.io": "^4.4.1",
     "tar": "^6.1.11"
