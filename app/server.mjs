@@ -1,6 +1,7 @@
-const { exec } = require ('child_process');
-const http = require('http');
-const express = require('express');
+import { exec } from'child_process';
+import http from 'http';
+import express from 'express';
+
 const app = express();
  
 
