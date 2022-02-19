@@ -4,7 +4,7 @@
   "description": "\"Client folder\"",
   "main": "index.js",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "react-scripts build --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +17,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "path-browserify": "^1.0.1",
     "react-scripts": "^5.0.0"
   }
 }
