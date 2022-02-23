@@ -11,7 +11,7 @@
     "eject": "react-app-rewired eject",
     "devStart": "nodemon ./server.mjs",
     "client": "npm start --prefix client",
-    "heroku-postbuild": "NODE_OPTIONS=--openssl-legacy-provider NPM_CONFIG_PRODUCTION=false cd .. && cd client_dir && npm install && npm run build"
+    "heroku-postbuild": "NODE_OPTIONS=--openssl-legacy-provider NPM_CONFIG_PRODUCTION=false && cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
