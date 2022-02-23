@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "client-install": "npm install --prefix client",
-     "start": "react-app-rewired start",
+    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
@@ -43,7 +43,8 @@
     "socket.io": "^4.4.1",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "tar": "^6.1.11"
+    "tar": "^6.1.11",
+    "webpack": "^4.46.0"
   },
   "engines": {
     "node": ">= 0.8",
