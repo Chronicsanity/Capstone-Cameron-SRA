@@ -21,6 +21,7 @@
     "aws-sdk": "^2.1079.0",
     "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
+    "mock-aws-s3": "^4.0.2",
     "nock": "^13.2.4",
     "node-polyfill-webpack-plugin": "^1.1.4",
     "path": "^0.12.7",
