@@ -7,10 +7,13 @@ import path from 'path'
 
 
 const saltRounds = 10;
+const http = require('http');
+const PORT = require('PORT');
+const psychopg2 = require('psychopg2');
 const __dirname = path.resolve(); 
-const server = http.createServer(process.env.PORT || 3000);
+const server = http.createServer(process.env.PORT || 8000);
 
-server.listen(process.env.PORT || 3000, function(){
+server.listen(process.env.PORT || 8000, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
 
