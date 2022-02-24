@@ -8,7 +8,7 @@ const __dirname = path.resolve();
 
 const server = http.createServer((req, res) =>
 {
-  if (req.url === '/run') {
+  if (req.url === '/') {
     exec('main.py', () => {
 
       res.writeHead (200, {'Content-Type':'text/plain'});
@@ -19,6 +19,7 @@ const server = http.createServer((req, res) =>
 
 }
   server.listen(8080)
+  response.end();
 });
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("build"));
